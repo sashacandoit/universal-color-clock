@@ -36,20 +36,26 @@
       grid-template-columns: 1fr;
     }
 }
-
 #countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+#countdown-box {
   text-align: justify;
 }
 
+
 .countdown-headers {
-  /* text-align: justify; */
   margin: 0 auto;
-  /* width: 245px; */
   font-family: "UCCA", Sans-serif;
   font-size: 15px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
+  height: 18px;
 }
 
 .countdown-headers::after {
@@ -63,6 +69,11 @@
   display: inline-block;
   width: 100%;
 }
+
+#countdown-title {
+  height: auto;
+}
+
 
 
 /***************************************/
