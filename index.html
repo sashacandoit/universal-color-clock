@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCC</title>
+</head>
+<body>
+  
+  <div id="ucc-header-section" class="ucc-section">
+    <div class="ucc-left-col ucc-empty-col">left</div>
+    <div id="ucc-color-change-header" class="ucc-center-col">center</div>
+    <div id="countdown-container" class="ucc-right-col">
+      <div class="countdown-headers" id="countdown-title">
+        <span>COUNTDOWN TO MINT:</span>
+      </div>
+      <div id="timer"></div>
+      <div class="countdown-headers countdown-dates">
+        <span>NOON ON APRIL 29, 2023</span>
+      </div>
+      <div id="" class="countdown-headers countdown-dates">
+        <span>UNTIL NOON OF APRIL 30</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="ucc-subhead-section" class="ucc-section">
+    <div id="ucc-rapid-color-change" class="ucc-left-col">left</div>
+    <div id="ucc-color-change" class="ucc-center-col">
+      <div id="current-time"></div>
+      <div>Universal Color Code: <span id="color-code"></span></div>
+    </div>
+    <div class="ucc-right-col ucc-empty-col">right</div>
+  </div>
+
+
+  <script src="color_data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    //Set widths of countdown timer headers
+    let base_width = document.getElementById("timer-day").offsetWidth + document.getElementById("timer-hour").offsetWidth + document.getElementById("timer-min").offsetWidth + document.getElementById("timer-sec").offsetWidth + 45;
+    document.getElementById("countdown-title").style.width=`${base_width}px`
+
+    let countdown_headers = [...document.getElementsByClassName("countdown-headers")]
+
+    countdown_headers.forEach((header) => {
+      header.style.width = `${base_width}px`
+    })
+  </script>
+</body>
+</html>

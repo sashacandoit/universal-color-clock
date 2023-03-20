@@ -1,0 +1,120 @@
+.ucc-section {
+  display: grid;
+  grid-template-columns: 412px auto 290px;
+  grid-template-rows: 260px;
+  background-color: gray;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.ucc-left-col, .ucc-center-col, .ucc-right-col {
+  background-color: pink;
+  border: 1px solid grey;
+}
+
+/* IPAD SECTION BREAKS */
+@media only screen and (max-width: 920px) {
+  #ucc-header-section {
+    grid-template-columns: auto 290px;
+  }
+
+  #ucc-subhead-section {
+    grid-template-columns: 412px auto;
+  }
+  .ucc-empty-col {
+    display: none;
+  }
+}
+
+/* IPHONE SECTION BREAKS */
+@media only screen and (max-width: 750px) {
+  #ucc-header-section {
+      grid-template-columns: 1fr;
+    }
+  
+    #ucc-subhead-section {
+      grid-template-columns: 1fr;
+    }
+}
+
+#countdown-container {
+  text-align: justify;
+}
+
+.countdown-headers {
+  /* text-align: justify; */
+  margin: 0 auto;
+  /* width: 245px; */
+  font-family: "UCCA", Sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.countdown-headers::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.countdown-headers::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+
+/***************************************/
+/* COUNTDOWN TIMER */
+/***************************************/
+
+#timer,
+#timer2 {
+  font-size: 36px !important;
+  color: black;
+  font-family: "UCCA", Sans-Serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+#timer div,
+span {
+  font-family: "UCCA", Sans-Serif;
+}
+
+#timer {
+  justify-content: center;
+}
+
+#timer span {
+  min-width: 15px;
+}
+
+#timer div span,
+#timer2 div span {
+  display: inline-block;
+  text-align: center;
+}
+
+#timer div,
+#timer2 div {
+  justify-content: center;
+}
+
+#timer-min #timer-hour {
+  min-width: 50px;
+  text-align: center;
+}
+
+#timer-day {
+  text-align: left;
+  min-width: 45px;
+}
+
+#timer-sec {
+  min-width: 45px;
+  text-align: right;
+}
