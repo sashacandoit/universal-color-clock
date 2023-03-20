@@ -66,6 +66,10 @@ function update() {
 
 }
 
+setInterval(() => {
+  update()
+}, 1000)
+
 
 /** Function for updating countdown timer */
 
