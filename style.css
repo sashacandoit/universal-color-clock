@@ -11,7 +11,7 @@ body {
 .ucc-section {
   display: grid;
   grid-template-columns: 412px auto 290px;
-  grid-template-rows: 260px;
+  min-height: 260px;
   border: 1px solid turquoise;  
   padding: 5px;
   margin-bottom: 20px;
@@ -167,4 +167,10 @@ span {
 
 #ucc-rapid-color-change {
   background-color: white;
+
+}
+
+#io-background-img {
+  min-height: 400px;
+  background-image: url("images/infinite_objects_background.png");
 }
