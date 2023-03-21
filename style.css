@@ -330,6 +330,7 @@ font-weight: bold;
 }
 
 #ucc-timestamp-row {
+  color: rgba(0, 0, 0, 0.55);
   mix-blend-mode: overlay;
   line-height: 0.7em;
   font-family: "Helvetica", Sans-serif;
