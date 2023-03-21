@@ -31,7 +31,7 @@ body {
 .ucc-section {
   display: grid;
   grid-template-columns: 412px auto 290px;
-  min-height: 260px;
+  min-height: 220px;
   border: 1px solid turquoise;  
   padding: 5px;
   margin-bottom: 20px;
@@ -69,6 +69,22 @@ body {
 
 /******************************************* TOP - ucc-header-section */
 
+.ucc-center-col {
+  padding: 40px 20px 20px 35px;
+  font-family: "Simplex UCCA";
+  font-weight: bold;
+}
+
+#ricci-albenda-title {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+#ucc-title {
+  font-size: 36px;
+  color: white;
+}
+
 #fluid-color, #precision-time {
   font-family: "Seravek", Sans-serif;
   font-style: italic;
@@ -105,10 +121,9 @@ body {
 .countdown-headers {
   font-family: "Simplex UCCA", Sans-Serif;
   margin: 0 auto;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 1px;
   height: 18px;
 }
 
@@ -126,6 +141,8 @@ body {
 
 #countdown-title {
   height: auto;
+  font-size: 17px;
+  margin-bottom: -5px;
 }
 
 
@@ -135,7 +152,8 @@ body {
 #timer,
 #timer2 {
 font-family: "Simplex UCCA", Sans-serif;
-  font-size: 36px;
+font-weight: bold;
+  font-size: 35px;
   color: black;
   display: flex;
   align-items: center;
@@ -196,3 +214,22 @@ span {
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
 }
+
+#ucc-color-change {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 35px;
+}
+
+#current-time {
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+#universal-color-code {
+  font-size: 14px;
+}
+
