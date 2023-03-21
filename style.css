@@ -24,7 +24,7 @@ body {
 }
 
 #custom-sections {
-  background: rgb(215, 193, 3);
+  background: rgb(168, 168, 168);
   background: linear-gradient(90deg, rgba(215, 193, 3, 1) 0%, rgba(239, 128, 148, 1) 24%, rgba(105, 143, 232, 1) 50%, rgba(104, 198, 102, 1) 78%, rgba(215, 193, 3, 1) 100%);
 }
 
@@ -32,15 +32,18 @@ body {
   display: grid;
   grid-template-columns: 412px auto 290px;
   min-height: 220px;
-  border: 1px solid turquoise;  
-  padding: 5px;
-  margin-bottom: 20px;
+  /* border: 1px solid turquoise;   */
+  /* padding: 5px; */
   transition: 500ms;
 }
 
 .ucc-left-col, .ucc-center-col, .ucc-right-col {
-  border: 1px solid coral;
+  /* border: 1px solid coral; */
   transition: 500ms;
+}
+
+#ucc-spacer {
+  min-height: 50px;
 }
 
 /******************************************* IPAD SECTION BREAKS */
@@ -78,7 +81,7 @@ body {
 /******************************************* TOP - ucc-header-section */
 
 .ucc-center-col {
-  padding: 40px 20px 20px 35px;
+  padding: 45px 20px 20px 35px;
   font-family: "Simplex UCCA";
   font-weight: bold;
 }
@@ -305,6 +308,12 @@ font-weight: bold;
   font-size: 18px;
   border: 2px black solid;
   border-radius: 25px;
-  padding: 12px 30px 12px 30px;
+  padding: 12px 33px 14px 33px;
   margin: 10px 15px 10px 0px;
+  transition: 500ms;
+}
+
+.ucc-button-link:hover {
+  background-color: white;
+  color: black;
 }
