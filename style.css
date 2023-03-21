@@ -168,8 +168,8 @@ font-weight: bold;
   text-align: justify;
 }
 
-#timer div,
-span {
+#timer > div,
+#timer > span {
   font-family: "Simplex UCCA", Sans-Serif;
 }
 
@@ -177,19 +177,19 @@ span {
   justify-content: center;
 }
 
-#timer span {
+#timer > span {
   min-width: 15px;
   text-align: center;
 }
 
-#timer div span,
-#timer2 div span {
+#timer > div span,
+#timer2 > div span {
   display: inline-block;
   text-align: center;
 }
 
-#timer div,
-#timer2 div {
+#timer > div,
+#timer2 > div {
   justify-content: center;
 }
 
@@ -258,18 +258,6 @@ span {
   font-size: 20px;
 }
 
-#left-ucc-description {
-  font-size: 19px;
-}
-
-#ucc-color-change {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 65px;
-  padding-bottom: 35px;
-}
-
 #hr-box {
   min-width: 37px;
 }
@@ -282,6 +270,17 @@ span {
   display: inline-block;
 }
 
+#left-ucc-description {
+  font-size: 19px;
+}
+
+#ucc-color-change {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 35px;
+}
 
 #current-time {
   font-size: 26px;
@@ -292,4 +291,20 @@ span {
 #universal-color-code {
   font-size: 14px;
 }
-
+#ucc-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.ucc-button-link {
+  background-color: black;
+  color: white;
+  font-family: "seravek-web", Sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  border: 2px black solid;
+  border-radius: 25px;
+  padding: 12px 30px 12px 30px;
+  margin: 10px 15px 10px 0px;
+}
