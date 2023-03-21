@@ -3,10 +3,6 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="https://use.typekit.net/eos5bpf.css">
-  <link href='fonts/SimplexUCCA-Bold.woff' rel='stylesheet' type='text/css'>
-  <link href='fonts/SimplexUCCA.woff' rel='stylesheet' type='text/css'>
-  <link href='fonts/SimplexUCCA-Bold.otf' rel='stylesheet' type='text/css'>
-  <link href='fonts/SimplexUCCA.otf' rel='stylesheet' type='text/css'>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,15 +51,15 @@
   <script src="color_data.js"></script>
   <script src="script.js"></script>
   <script>
-    //Set widths of countdown timer headers
-    let base_width = document.getElementById("timer-day").offsetWidth + document.getElementById("timer-hour").offsetWidth + document.getElementById("timer-min").offsetWidth + document.getElementById("timer-sec").offsetWidth + 45;
-    document.getElementById("countdown-title").style.width=`${base_width}px`
+    // //Set widths of countdown timer headers
+    // let base_width = document.getElementById("timer-day").offsetWidth + document.getElementById("timer-hour").offsetWidth + document.getElementById("timer-min").offsetWidth + document.getElementById("timer-sec").offsetWidth + 45;
+    // document.getElementById("countdown-title").style.width=`${base_width}px`
 
-    let countdown_headers = [...document.getElementsByClassName("countdown-headers")]
-
-    countdown_headers.forEach((header) => {
-      header.style.width = `${base_width}px`
-    })
+    // let countdown_headers = [...document.getElementsByClassName("countdown-headers")]
+    // console.log(base_width)
+    // countdown_headers.forEach((header) => {
+    //   header.style.width = `${base_width}px`
+    // })
   </script>
 </body>
 </html>

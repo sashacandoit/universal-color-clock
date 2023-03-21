@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Simplex UCCA";
+  src: url('fonts/SimplexUCCA.otf');
+  src: url('fonts/SimplexUCCA.otf') format('embedded-opentype'),
+    url('fonts/SimplexUCCA.woff2') format('woff2'),
+    url('fonts/SimplexUCCA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SimplexUCCA";
+  src: url('fonts/SimplexUCCA-Bold.otf');
+  src: url('fonts/SimplexUCCA-Bold.otf') format('embedded-opentype'),
+    url('fonts/SimplexUCCA-Bold.woff2') format('woff2'),
+    url('fonts/SimplexUCCA-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 /******************************************* Section Structure */
 body {
   margin: 0;
@@ -72,7 +92,6 @@ body {
 
 #countdown-container {
   background-color: white;
-  font-family: UCCA;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,10 +100,10 @@ body {
 
 #countdown-box {
   text-align: justify;
-  font-family: "UCCA", Sans-Serif;
 }
 
 .countdown-headers {
+  font-family: "Simplex UCCA", Sans-Serif;
   margin: 0 auto;
   font-size: 15px;
   font-weight: 300;
@@ -115,8 +134,8 @@ body {
 
 #timer,
 #timer2 {
-font-family: "UCCA", Sans-serif;
-  font-size: 36px !important;
+font-family: "Simplex UCCA", Sans-serif;
+  font-size: 36px;
   color: black;
   display: flex;
   align-items: center;
@@ -125,7 +144,7 @@ font-family: "UCCA", Sans-serif;
 
 #timer div,
 span {
-  font-family: "UCCA", Sans-Serif;
+  font-family: "Simplex UCCA", Sans-Serif;
 }
 
 #timer {
@@ -134,6 +153,7 @@ span {
 
 #timer span {
   min-width: 15px;
+  text-align: center;
 }
 
 #timer div span,
@@ -154,11 +174,11 @@ span {
 
 #timer-day {
   text-align: left;
-  min-width: 45px;
+  min-width: 50px;
 }
 
 #timer-sec {
-  min-width: 45px;
+  min-width: 50px;
   text-align: right;
 }
 
@@ -173,4 +193,6 @@ span {
 #io-background-img {
   min-height: 400px;
   background-image: url("images/infinite_objects_background.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
 }

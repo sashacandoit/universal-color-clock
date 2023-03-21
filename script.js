@@ -100,6 +100,15 @@ function updateTimer() {
     '<span> : </span>' +
     '<div id="timer-sec">' + s + '</div>';
 
+  //Set widths of countdown timer headers
+  let base_width = document.getElementById("timer-day").offsetWidth + document.getElementById("timer-hour").offsetWidth + document.getElementById("timer-min").offsetWidth + document.getElementById("timer-sec").offsetWidth + 45;
+  document.getElementById("countdown-title").style.width = `${base_width}px`
+
+  let countdown_headers = [...document.getElementsByClassName("countdown-headers")]
+  // console.log(base_width)
+  countdown_headers.forEach((header) => {
+    header.style.width = `${base_width}px`
+  })
 }
 updateTimer();
 setInterval('updateTimer()', 1000);
