@@ -113,3 +113,55 @@ function updateTimer() {
 updateTimer();
 setInterval('updateTimer()', 1000);
 
+
+/** Functions for updating section background color, color code and time stamp in rapid time
+*/
+
+function fastUpdate() {
+  let interval = setInterval(fastTimer, 50);
+  let sec = 0;
+  let min = 0;
+  let hr = 1;
+
+  let strTime = hr + ":" + min.toString().padStart(2, '0') + ":" + sec.toString().padStart(2, '0') + ' ' + amp
+
+  function fastTimer() {
+    min++
+    if (min === 60) {
+      min = 0;
+      hr++;
+    }
+
+    if (hr === 24) {
+      hr = 1;
+    }
+
+    let timeKey = hr.toString().padStart(2, '0') + ":" + min.toString().padStart(2, '0')
+    let r = Math.trunc(m.get(timeKey)[1])
+    let g = Math.trunc(m.get(timeKey)[2])
+    let b = Math.trunc(m.get(timeKey)[3])
+
+    let r_p3 = (r / 255.0).toPrecision(5)
+    let g_p3 = (g / 255.0).toPrecision(5)
+    let b_p3 = (b / 255.0).toPrecision(5)
+    let fastBGChange = document.getElementById("ucc-rapid-color-change");
+    document.getElementById("rapid-time-change").style.color = `rgb(${r}, ${g}, ${b})`
+
+    fastBGChange.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+    if (window.matchMedia("(color-gamut: p3)").matches) {
+      fastBGChange.style.backgroundColor = `color(display-p3 ${r_p3} ${g_p3} ${b_p3})`
+    }
+
+    let amp = hr >= 12 ? 'pm' : 'am'
+    let hour = hr % 12;
+    hour = hr ? hr : 12;
+
+    document.getElementById("rapid-time-change").innerHTML =
+      "<span id='hr-box'>" + "@" + "</span>" + " " + hour +
+      "<span id='min-box'>" + ":" + min.toString().padStart(2, '0') + "</span>" +
+      "<span>" + amp + "</span>";
+
+  }
+}
+
+fastUpdate()

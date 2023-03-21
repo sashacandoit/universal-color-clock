@@ -35,10 +35,12 @@ body {
   border: 1px solid turquoise;  
   padding: 5px;
   margin-bottom: 20px;
+  transition: 500ms;
 }
 
 .ucc-left-col, .ucc-center-col, .ucc-right-col {
   border: 1px solid coral;
+  transition: 500ms;
 }
 
 /******************************************* IPAD SECTION BREAKS */
@@ -53,6 +55,12 @@ body {
   .ucc-empty-col {
     display: none;
   }
+
+  .mobile-hidden.ucc-left-col.ucc-empty-col {
+    display: none;
+  }
+
+  
 }
 
 /* IPHONE SECTION BREAKS */
@@ -96,7 +104,7 @@ body {
 
 .ucc-left-col.ucc-empty-col {
   padding: 20px 50px 0px 50px;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -213,6 +221,45 @@ span {
   background-image: url("images/infinite_objects_background.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.left-col-text {
+  font-family: "Seravek", Sans-serif;
+  font-weight: 300;
+  height: 250px;
+  padding: 40px 60px 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.ucc-header-text {
+  margin-bottom: 75px;
+}
+
+#left-ucc-gradient {
+  font-size: 30px;
+  letter-spacing: 1px;
+  background-size: 180%;
+  background-repeat: repeat;
+  background-color: rgb(215, 193, 3);
+  background-image: linear-gradient(90deg, rgba(215, 193, 3, 1) 0%, rgba(239, 128, 148, 1) 24%, rgba(105, 143, 232, 1) 50%, rgba(104, 198, 102, 1) 78%, rgba(215, 193, 3, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#rapid-time-change {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+#left-ucc-description {
+  font-size: 19px;
 }
 
 #ucc-color-change {
@@ -222,6 +269,19 @@ span {
   padding-top: 65px;
   padding-bottom: 35px;
 }
+
+#hr-box {
+  min-width: 37px;
+}
+
+#min-box {
+  min-width: 35px;
+  text-align: left;
+  margin-left: 3px;
+  margin-right: 3px;
+  display: inline-block;
+}
+
 
 #current-time {
   font-size: 26px;
