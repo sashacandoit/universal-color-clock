@@ -63,6 +63,9 @@ body {
     display: none;
   }
 
+  #ucc-timestamp-container {
+    display: none;
+  }
   
 }
 
