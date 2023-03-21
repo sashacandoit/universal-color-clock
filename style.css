@@ -317,3 +317,31 @@ font-weight: bold;
   background-color: white;
   color: black;
 }
+
+
+/** */
+
+#ucc-timestamp-container {
+  text-align: justify;
+  padding-top: 17px;
+}
+
+#ucc-timestamp-row {
+  mix-blend-mode: overlay;
+  line-height: 0.7em;
+  font-family: "Helvetica", Sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+#ucc-timestamp-row:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+#ucc-timestamp-row:before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
