@@ -92,13 +92,13 @@ function updateTimer() {
 
 
   document.getElementById("timer").innerHTML =
-    '<div id="timer-day">' + d + '</div>' +
-    '<span> : </span>' +
-    '<div id="timer-hour">' + h + '</div>' +
-    '<span> : </span>' +
-    '<div id="timer-min">' + m + '</div>' +
-    '<span> : </span>' +
-    '<div id="timer-sec">' + s + '</div>';
+    '<div id="timer-day">' + d + ' DAYS</div>' +
+    '<span>  </span>' +
+    '<div id="timer-hour">' + h + ' HOURS</div>' +
+    '<span>  </span>' +
+    '<div id="timer-min">' + m + ' MINUTES</div>' +
+    '<span>  </span>' +
+    '<div id="timer-sec">' + s + ' SECONDS</div>';
 
   //Set widths of countdown timer headers
   let base_width = document.getElementById("timer-day").offsetWidth + document.getElementById("timer-hour").offsetWidth + document.getElementById("timer-min").offsetWidth + document.getElementById("timer-sec").offsetWidth + 45;
@@ -110,8 +110,8 @@ function updateTimer() {
     header.style.width = `${base_width}px`
   })
 }
-// updateTimer();
-// setInterval('updateTimer()', 1000);
+updateTimer();
+setInterval('updateTimer()', 1000);
 
 
 /** Functions for updating section background color, color code and time stamp in rapid time

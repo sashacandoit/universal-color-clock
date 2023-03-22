@@ -177,11 +177,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 26px; 
+  padding-top: 30px;
+  /* remove below before adding to site */
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
 }
 
 #countdown-box {
-  text-align: justify;
+  text-align: center;
 }
 
 .countdown-headers {
@@ -193,7 +197,7 @@ body {
   height: 18px;
 }
 
-.countdown-headers::after {
+/* .countdown-headers::after {
   content: "";
   display: inline-block;
   width: 100%;
@@ -203,7 +207,7 @@ body {
   content: "";
   display: inline-block;
   width: 100%;
-}
+} */
 
 #countdown-title {
   height: auto;
@@ -358,11 +362,12 @@ body {
 #timer2 {
   font-family: "Simplex UCCA", Sans-serif;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 22px;
   color: black;
   display: flex;
   align-items: center;
-  text-align: justify;
+  text-align: center;
+  margin-top: 15px;
 }
 
 #timer>div,
@@ -392,7 +397,7 @@ body {
 
 #timer-min #timer-hour {
   min-width: 50px;
-  text-align: center;
+  text-align: right;
 }
 
 #timer-day {
