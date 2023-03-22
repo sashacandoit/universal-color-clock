@@ -50,12 +50,21 @@ body {
 @media only screen and (max-width: 920px) {
   #ucc-header-section {
     /* grid-template-columns: auto 290px; */
-    grid-template-columns: auto 60%;
+    grid-template-columns: auto 55%;
   }
 
   #ucc-subhead-section {
     grid-template-columns: 500px auto;
   }
+
+  .ucc-left-col.ucc-empty-col {
+    padding: 20px 50px 0px 50px !important;
+  }
+
+  #fluid-color, #precision-time {
+    font-size: 38px;
+  }
+
   /* .ucc-empty-col {
     display: none;
   }
