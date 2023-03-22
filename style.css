@@ -110,6 +110,10 @@ body {
     min-height: 100%;
     width: auto;
   }
+
+  #left-ucc-gradient {
+    font-size: 35px;
+  }
 }
 
 
