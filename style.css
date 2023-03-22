@@ -85,21 +85,39 @@ body {
       grid-template-columns: 1fr;
     }
   
-    #ucc-subhead-section {
-      grid-template-columns: 1fr;
-    }
+  #ucc-subhead-section {
+    grid-template-columns: 1fr;
+  }
 
-      .ucc-empty-col {
-        display: none;
-      }
-    
-      .mobile-hidden.ucc-left-col.ucc-empty-col {
-        display: none;
-      }
+  .ucc-empty-col {
+    display: none;
+  }
 
-      #ucc-spacer {
-        display: none;
-      }
+  .mobile-hidden.ucc-left-col.ucc-empty-col {
+    display: none;
+  }
+
+  #ucc-spacer {
+    display: none;
+  }
+
+  #io-background-img {
+    background-position: left top;
+    min-height: 100%;
+    width: auto;
+  }
+}
+
+
+@media only screen and (max-width: 445px) {
+  .left-col-text {
+    padding: 40px 50px 50px 50px !important;
+  }
+
+  #io-background-img {
+    background-position: left top;
+    width: 445px;
+  }
 }
 
 
@@ -192,10 +210,11 @@ body {
 }
 
 #io-background-img {
-  min-height: 485px;
+  height: 485px;
   background-image: url("images/infinite_objects_background_500.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
+  background-position: right top;
   display: flex;
   flex-direction: column;
   justify-content: end;
