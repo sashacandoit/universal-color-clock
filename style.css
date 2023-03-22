@@ -49,19 +49,20 @@ body {
 /******************************************* IPAD SECTION BREAKS */
 @media only screen and (max-width: 920px) {
   #ucc-header-section {
-    grid-template-columns: auto 290px;
+    /* grid-template-columns: auto 290px; */
+    grid-template-columns: auto 60%;
   }
 
   #ucc-subhead-section {
-    grid-template-columns: 412px auto;
+    grid-template-columns: 500px auto;
   }
-  .ucc-empty-col {
+  /* .ucc-empty-col {
     display: none;
   }
 
   .mobile-hidden.ucc-left-col.ucc-empty-col {
     display: none;
-  }
+  } */
 
   #ucc-timestamp-container {
     display: none;
@@ -78,6 +79,18 @@ body {
     #ucc-subhead-section {
       grid-template-columns: 1fr;
     }
+
+      .ucc-empty-col {
+        display: none;
+      }
+    
+      .mobile-hidden.ucc-left-col.ucc-empty-col {
+        display: none;
+      }
+
+      #ucc-spacer {
+        display: none;
+      }
 }
 
 
