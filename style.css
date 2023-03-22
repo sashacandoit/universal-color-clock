@@ -30,8 +30,8 @@ body {
 
 .ucc-section {
   display: grid;
-  grid-template-columns: 500px auto;
-  min-height: 220px;
+  grid-template-columns: 500px auto 165px;
+  min-height: 150px;
   /* border: 1px solid turquoise;   */
   /* padding: 5px; */
   transition: 500ms;
@@ -172,49 +172,19 @@ body {
   text-align: right;
 }
 
-#countdown-container {
-  background-color: white;
+#color-chip-text-box {
+  font-family: "Simplex UCCA";
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 45px 10px 10px 10px;
+}
+
+#color-chip-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 26px; 
-  padding-top: 30px;
-  /* remove below before adding to site */
-  border-bottom: 2px solid black;
-  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
 }
-
-#countdown-box {
-  text-align: center;
-}
-
-.countdown-headers {
-  font-family: "Simplex UCCA", Sans-Serif;
-  margin: 0 auto;
-  font-size: 14px;
-  font-weight: 300;
-  text-transform: uppercase;
-  height: 18px;
-}
-
-/* .countdown-headers::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
-
-.countdown-headers::before {
-  content: "";
-  display: inline-block;
-  width: 100%;
-} */
-
-#countdown-title {
-  height: auto;
-  font-size: 17px;
-  margin-bottom: -5px;
-}
-
 
 
 
@@ -358,6 +328,49 @@ body {
 
 /******************************************* COUNTDOWN TIMER */
 
+#countdown-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 26px;
+  padding-top: 30px;
+  /* remove below before adding to site */
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+#countdown-box {
+  text-align: center;
+}
+
+.countdown-headers {
+  font-family: "Simplex UCCA", Sans-Serif;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  height: 18px;
+}
+
+/* .countdown-headers::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.countdown-headers::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+} */
+
+#countdown-title {
+  height: auto;
+  font-size: 17px;
+  /* margin-bottom: -5px; */
+}
+
 #timer,
 #timer2 {
   font-family: "Simplex UCCA", Sans-serif;
@@ -367,7 +380,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 #timer>div,
