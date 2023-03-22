@@ -110,8 +110,8 @@ function updateTimer() {
     header.style.width = `${base_width}px`
   })
 }
-updateTimer();
-setInterval('updateTimer()', 1000);
+// updateTimer();
+// setInterval('updateTimer()', 1000);
 
 
 /** Functions for updating section background color, color code and time stamp in rapid time

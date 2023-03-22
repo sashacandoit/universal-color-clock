@@ -30,7 +30,7 @@ body {
 
 .ucc-section {
   display: grid;
-  grid-template-columns: 412px auto 290px;
+  grid-template-columns: 500px auto;
   min-height: 220px;
   /* border: 1px solid turquoise;   */
   /* padding: 5px; */
@@ -109,7 +109,7 @@ body {
 }
 
 .ucc-left-col.ucc-empty-col {
-  padding: 20px 50px 0px 50px;
+  padding: 20px 110px 0px 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,59 +161,6 @@ body {
 
 
 
-/******************************************* COUNTDOWN TIMER */
-
-#timer,
-#timer2 {
-font-family: "Simplex UCCA", Sans-serif;
-font-weight: bold;
-  font-size: 35px;
-  color: black;
-  display: flex;
-  align-items: center;
-  text-align: justify;
-}
-
-#timer > div,
-#timer > span {
-  font-family: "Simplex UCCA", Sans-Serif;
-}
-
-#timer {
-  justify-content: center;
-}
-
-#timer > span {
-  min-width: 15px;
-  text-align: center;
-}
-
-#timer > div span,
-#timer2 > div span {
-  display: inline-block;
-  text-align: center;
-}
-
-#timer > div,
-#timer2 > div {
-  justify-content: center;
-}
-
-#timer-min #timer-hour {
-  min-width: 50px;
-  text-align: center;
-}
-
-#timer-day {
-  text-align: left;
-  min-width: 50px;
-}
-
-#timer-sec {
-  min-width: 50px;
-  text-align: right;
-}
-
 
 /******************************************* BOTTOM - ucc-section */
 
@@ -223,8 +170,8 @@ font-weight: bold;
 }
 
 #io-background-img {
-  min-height: 400px;
-  background-image: url("images/infinite_objects_background.png");
+  min-height: 485px;
+  background-image: url("images/infinite_objects_background_500.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   display: flex;
@@ -236,18 +183,19 @@ font-weight: bold;
   font-family: "Seravek", Sans-serif;
   font-weight: 300;
   height: 250px;
-  padding: 40px 60px 40px 60px;
+  padding: 40px 90px 50px 65px;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 
 .ucc-header-text {
-  margin-bottom: 75px;
+  margin-bottom: 95px;
 }
 
 #left-ucc-gradient {
   font-size: 30px;
+  font-weight: 400;
   letter-spacing: 1px;
   background-size: 180%;
   background-repeat: repeat;
@@ -277,7 +225,7 @@ font-weight: bold;
 }
 
 #left-ucc-description {
-  font-size: 19px;
+  font-size: 22px;
 }
 
 #ucc-color-change {
@@ -348,4 +296,58 @@ font-weight: bold;
   content: "";
   display: inline-block;
   width: 100%;
+}
+
+
+/******************************************* COUNTDOWN TIMER */
+
+#timer,
+#timer2 {
+  font-family: "Simplex UCCA", Sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+#timer>div,
+#timer>span {
+  font-family: "Simplex UCCA", Sans-Serif;
+}
+
+#timer {
+  justify-content: center;
+}
+
+#timer>span {
+  min-width: 15px;
+  text-align: center;
+}
+
+#timer>div span,
+#timer2>div span {
+  display: inline-block;
+  text-align: center;
+}
+
+#timer>div,
+#timer2>div {
+  justify-content: center;
+}
+
+#timer-min #timer-hour {
+  min-width: 50px;
+  text-align: center;
+}
+
+#timer-day {
+  text-align: left;
+  min-width: 50px;
+}
+
+#timer-sec {
+  min-width: 50px;
+  text-align: right;
 }
