@@ -30,8 +30,8 @@ body {
 
 .ucc-section {
   display: grid;
-  grid-template-columns: 500px auto 165px;
-  min-height: 150px;
+  grid-template-columns: 500px auto 175px;
+  /* height: 155px; */
   /* border: 1px solid turquoise;   */
   /* padding: 5px; */
   transition: 500ms;
@@ -136,18 +136,20 @@ body {
 /******************************************* TOP - ucc-header-section */
 
 .ucc-center-col {
-  padding: 45px 20px 20px 35px;
+  padding: 45px 20px 0px 35px;
   font-family: "Simplex UCCA";
   font-weight: bold;
 }
 
 #ricci-albenda-title {
   font-size: 19px;
-  margin-bottom: 10px;
+  line-height: 24px;
+  margin-bottom: 5px;
 }
 
 #ucc-title {
   font-size: 36px;
+  line-height: 1em;
   color: white;
 }
 
@@ -175,15 +177,15 @@ body {
 #color-chip-text-box {
   font-family: "Simplex UCCA";
   font-size: 16px;
-  line-height: 1.5em;
+  line-height: 24px;
   padding: 45px 10px 10px 10px;
 }
 
 #color-chip-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: start;
+  justify-content: start; */
 }
 
 
@@ -330,9 +332,6 @@ body {
 
 #countdown-container {
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 26px;
   padding-top: 30px;
   /* remove below before adding to site */
