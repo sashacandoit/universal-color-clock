@@ -136,7 +136,7 @@ body {
 /******************************************* TOP - ucc-header-section */
 
 .ucc-center-col {
-  padding: 45px 20px 0px 35px;
+  padding: 45px 20px 0px 50px;
   font-family: "Simplex UCCA";
   font-weight: bold;
 }
@@ -144,7 +144,7 @@ body {
 #ricci-albenda-title {
   font-size: 19px;
   line-height: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 #ucc-title {
@@ -181,20 +181,11 @@ body {
   padding: 45px 10px 10px 10px;
 }
 
-#color-chip-container {
-  /* display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start; */
-}
-
-
 
 /******************************************* BOTTOM - ucc-section */
 
 #ucc-rapid-color-change {
   background-color: white;
-
 }
 
 #io-background-img {
@@ -212,14 +203,14 @@ body {
   font-family: "Seravek", Sans-serif;
   font-weight: 300;
   height: 250px;
-  padding: 40px 90px 50px 65px;
+  padding: 40px 55px 45px 50px;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 
 .ucc-header-text {
-  margin-bottom: 95px;
+  margin-bottom: 55px;
 }
 
 #left-ucc-gradient {
@@ -239,22 +230,30 @@ body {
 #rapid-time-change {
   margin-top: 5px;
   font-size: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
 
 #hr-box {
-  min-width: 37px;
+  min-width: 20px;
+  margin-left: 3px;
+  text-align: right;
+  letter-spacing: 1.5px;
 }
 
 #min-box {
-  min-width: 35px;
+  min-width: 30px;
   text-align: left;
   margin-left: 3px;
-  margin-right: 3px;
-  display: inline-block;
+  letter-spacing: 1.5px;
+  /* margin-left: 3px;
+  margin-right: 1px;
+  display: inline-block; */
 }
 
 #left-ucc-description {
-  font-size: 22px;
+  font-size: 21px;
 }
 
 #ucc-color-change {

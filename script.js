@@ -159,7 +159,8 @@ setInterval('updateTimer()', 1000);
 */
 
 function fastUpdate() {
-  let interval = setInterval(fastTimer, 50);
+  
+  let interval = setInterval(fastTimer, 100);
   let sec = 0;
   let min = 0;
   let hr = 1;
@@ -198,11 +199,14 @@ function fastUpdate() {
     hour = hr ? hr : 12;
 
     document.getElementById("rapid-time-change").innerHTML =
-      "<span id='hr-box'>" + "@" + "</span>" + " " + hour +
-      "<span id='min-box'>" + ":" + min.toString().padStart(2, '0') + "</span>" +
-      "<span>" + amp + "</span>";
+      "<div>@</div>" + "<div id='hr-box'>"
+    + hour + "</div>" + "<div>:</div>"
+    + "<div id='min-box'>"
+    + min.toString().padStart(2, '0')
+    + "</div>" + "<div>" + amp + "</div>";
 
   }
+
 }
 
 fastUpdate()
