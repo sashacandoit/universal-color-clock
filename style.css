@@ -102,6 +102,10 @@ body {
   #ucc-color-change {
     height: 472px !important;
   }
+
+  #countdown-container {
+    max-width: 100vw !important;
+  }
 }
 
 /******************************************* RESPONSIVE SECTION BREAK - small */
