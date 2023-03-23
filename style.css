@@ -46,109 +46,71 @@ body {
   min-height: 50px;
 }
 
-/******************************************* IPAD SECTION BREAKS */
-@media only screen and (max-width: 920px) {
+/******************************************* RESPONSIVE SECTION BREAK */
+@media only screen and (max-width: 1000px) {
   #ucc-header-section {
-    /* grid-template-columns: auto 290px; */
-    grid-template-columns: auto 55%;
+    grid-template-columns: auto 175px;
   }
 
-  #ucc-subhead-section {
-    grid-template-columns: 500px auto;
-  }
-
-  .ucc-left-col.ucc-empty-col {
-    padding: 20px 50px 0px 50px !important;
-  }
-
-  #fluid-color, #precision-time {
-    font-size: 38px;
-  }
-
-  /* .ucc-empty-col {
-    display: none;
-  }
-
-  .mobile-hidden.ucc-left-col.ucc-empty-col {
-    display: none;
-  } */
-
-  #ucc-timestamp-container {
-    display: none;
-  }
-  
-}
-
-/* IPHONE SECTION BREAKS */
-@media only screen and (max-width: 750px) {
-  #ucc-header-section {
-      grid-template-columns: 1fr;
-    }
-  
   #ucc-subhead-section {
     grid-template-columns: 1fr;
   }
 
-  .ucc-empty-col {
+  .ucc-left-col.ucc-empty-col {
+    display: none !important;
+  }
+
+  #ucc-rapid-color-change {
+    width: 500px;
+  }
+
+  #ucc-timestamp-container {
     display: none;
   }
 
-  .left-col-text {
-    max-width: 400px;
+  #timer-day {
+    min-width: 90px !important;
   }
 
-  .mobile-hidden.ucc-left-col.ucc-empty-col {
-    display: none;
+  #timer-hour {
+    min-width: 105px !important;
   }
 
-  #ucc-spacer {
-    display: none;
+  #timer-min {
+    min-width: 125px !important;
   }
 
-  #io-background-img {
-    background-position: left top;
-    min-height: 100%;
-    width: auto;
+  #timer-sec {
+    min-width: 135px !important;
   }
 
-  #left-ucc-gradient {
-    font-size: 35px;
+  #timer {
+    font-size: 20px !important;
+  }
+
+  #ucc-color-change {
+    height: 472px !important;
   }
 }
 
-
-@media only screen and (max-width: 450px) {
-  .left-col-text {
-    padding: 40px 50px 50px 50px !important;
-  }
-
-  #io-background-img {
-    background-position: left top;
-    width: 450px;
-  }
-
-  #ucc-buttons-container {
-    margin-bottom: 25px !important;
-  }
-}
 
 
 /******************************************* TOP - ucc-header-section */
 
 .ucc-center-col {
-  padding: 45px 20px 0px 50px;
+  padding: 55px 20px 5px 55px;
   font-family: "Simplex UCCA";
   font-weight: bold;
 }
 
 #ricci-albenda-title {
-  font-size: 19px;
+  font-size: 18px;
   line-height: 24px;
   margin-bottom: 3px;
 }
 
 #ucc-title {
-  font-size: 36px;
+  font-size: 34px;
   line-height: 1em;
   color: white;
 }
@@ -178,7 +140,7 @@ body {
   font-family: "Simplex UCCA";
   font-size: 16px;
   line-height: 24px;
-  padding: 45px 10px 10px 10px;
+  padding: 55px 10px 5px 10px;
 }
 
 
@@ -189,7 +151,7 @@ body {
 }
 
 #io-background-img {
-  height: 485px;
+  height: 472px;
   background-image: url("images/infinite_objects_background_500.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
@@ -203,14 +165,14 @@ body {
   font-family: "Seravek", Sans-serif;
   font-weight: 300;
   height: 250px;
-  padding: 40px 55px 45px 50px;
+  padding: 40px 55px 50px 55px;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 
 .ucc-header-text {
-  margin-bottom: 55px;
+  margin-bottom: 70px;
 }
 
 #left-ucc-gradient {
@@ -247,9 +209,7 @@ body {
   text-align: left;
   margin-left: 3px;
   letter-spacing: 1.5px;
-  /* margin-left: 3px;
-  margin-right: 1px;
-  display: inline-block; */
+
 }
 
 #left-ucc-description {
@@ -260,8 +220,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 65px;
-  padding-bottom: 35px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 #current-time {
@@ -277,6 +237,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
+  margin-bottom: 30px;
 }
 .ucc-button-link {
   background-color: black;
@@ -391,7 +352,7 @@ body {
 }
 
 #timer>span {
-  min-width: 15px;
+  min-width: 10px;
   text-align: center;
 }
 
@@ -406,17 +367,22 @@ body {
   justify-content: center;
 }
 
-#timer-min #timer-hour {
-  min-width: 50px;
+#timer-hour {
+  min-width: 118px;
+  text-align: right;
+}
+
+#timer-min {
+  min-width: 135px;
   text-align: right;
 }
 
 #timer-day {
   text-align: left;
-  min-width: 50px;
+  min-width: 95px;
 }
 
 #timer-sec {
-  min-width: 50px;
+  min-width: 145px;
   text-align: right;
 }
