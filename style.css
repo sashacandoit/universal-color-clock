@@ -234,9 +234,9 @@ body {
 }
 
 #hr-box {
-  min-width: 20px;
+  min-width: 28px;
   margin-left: 3px;
-  text-align: right;
+  text-align: center;
   letter-spacing: 1.2px;
 }
 
