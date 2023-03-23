@@ -99,12 +99,18 @@ body {
     font-size: 20px !important;
   }
 
-  /* #ucc-color-change {
+  #ucc-color-change {
     height: 472px !important;
-  } */
+  }
 }
 
+/******************************************* RESPONSIVE SECTION BREAK - small */
 
+@media only screen and (max-width: 600px) {
+  #countdown-container {
+      display: none;
+    }
+}
 
 /******************************************* TOP - ucc-header-section */
 
