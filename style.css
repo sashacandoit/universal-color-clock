@@ -116,9 +116,14 @@ body {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 435px) {
   .ucc-header-text {
-    max-width: 65%;
+    max-width: 60%;
+  }
+
+  #ucc-title {
+    /* transition: 500ms; */
+    font-size: 28px !important;
   }
 }
 
@@ -140,6 +145,7 @@ body {
   font-size: 34px;
   line-height: 1em;
   color: white;
+  transition: 500ms;
 }
 
 #fluid-color, #precision-time {
