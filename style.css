@@ -116,6 +116,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 450px) {
+  .ucc-header-text {
+    max-width: 65%;
+  }
+}
+
 /******************************************* TOP - ucc-header-section */
 
 .ucc-center-col {
