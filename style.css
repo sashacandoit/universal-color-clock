@@ -212,7 +212,7 @@ body {
 #left-ucc-gradient {
   font-size: 30px;
   font-weight: 400;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   background-size: 180%;
   background-repeat: repeat;
   background-color: rgb(215, 193, 3);
@@ -224,8 +224,10 @@ body {
 }
 
 #rapid-time-change {
-  margin-top: 5px;
-  font-size: 20px;
+  font-family: "Simplex UCCA";
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 19px;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -235,7 +237,7 @@ body {
   min-width: 20px;
   margin-left: 3px;
   text-align: right;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
 }
 
 #min-box {
