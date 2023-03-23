@@ -61,7 +61,18 @@ body {
   }
 
   #ucc-rapid-color-change {
-    width: 500px;
+    max-width: 500px;
+    width: auto;
+    height: fit-content;
+  }
+
+  #io-background-img {
+    background-position: center top !important;
+  }
+
+  .ucc-header-text {
+    margin-bottom: 40px !important;
+    padding-top: 20px;
   }
 
   #ucc-timestamp-container {
@@ -88,9 +99,9 @@ body {
     font-size: 20px !important;
   }
 
-  #ucc-color-change {
+  /* #ucc-color-change {
     height: 472px !important;
-  }
+  } */
 }
 
 
@@ -151,20 +162,20 @@ body {
 }
 
 #io-background-img {
-  height: 472px;
+  height: 100%;
   background-image: url("images/infinite_objects_background_500.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   background-position: right top;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .left-col-text {
   font-family: "Seravek", Sans-serif;
   font-weight: 300;
-  height: 250px;
+  /* height: 250px; */
   padding: 40px 55px 50px 55px;
   display: flex;
   flex-direction: column;
@@ -173,6 +184,7 @@ body {
 
 .ucc-header-text {
   margin-bottom: 70px;
+  margin-top: 50px;
 }
 
 #left-ucc-gradient {
